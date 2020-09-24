@@ -21,7 +21,7 @@ jobs:
           npm install -g pxt
           pxt target arcade
       - name: Fix files listed in config if necessary
-        run: node json-check.js
+        run: node .github/workflows/json-check.js
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
