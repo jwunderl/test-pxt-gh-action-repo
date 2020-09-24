@@ -50,4 +50,3 @@ jobs:
         with:
           title: 'missing files listed in pxt.json'
           commit-message: 'Removing missing files from pxt.json'
-          path: "pxt.json"
