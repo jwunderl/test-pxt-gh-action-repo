@@ -46,7 +46,7 @@ jobs:
       - name: Fix files listed in config if necessary
         run: node ./.github/workflows/json-check.js
       - name: Create Pull Request
-        uses: gr2m/create-or-update-pull-request-action@v1.x
+        uses: peter-evans/create-pull-request@v3
         with:
           title: 'missing files listed in pxt.json'
           commit-message: 'Removing missing files from pxt.json'
