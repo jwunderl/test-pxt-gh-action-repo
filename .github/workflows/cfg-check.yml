@@ -17,10 +17,8 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: npm install
         run: |
-          npm install -g pxt
+          npm install --no-package-lock -g pxt
           pxt target arcade
-      - name: Checkout current state
-        run: git checkout --
       - name: Fix files listed in config if necessary
         run: node .github/workflows/json-check.js
       - name: Create Pull Request
