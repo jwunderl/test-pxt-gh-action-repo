@@ -1,8 +1,7 @@
 name: Check pxt.json
 
 on:
-  push:
-    branches: [ master, main ]
+  push
 
 jobs:
   check-cfg:
